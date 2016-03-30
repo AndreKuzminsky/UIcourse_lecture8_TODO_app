@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>TODO application</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap/modal.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center">Fill the most important things to do</h1>
+        <ol id="taskList"></ol>
+        <form role="form">
+            <div class="role-group">
+                <input type="text" class="form-control" id="inputText" placeholder="Type a task">
+                <button type="submit" class="btn btn-success" disabled="disabled">Press to add</button>
+            </div>
+        </form>
+    </div>
+    <div id="myModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" type="button" data-dismiss="modal">×</button>
+                    <h4 class="modal-title">Edit your task</h4>
+                </div>
+                <form class="modal-body" role="form">
+                    <div class="role-group">
+                        <input type="text" class="form-control" id="changedText">
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" id="btn-change" type="button" data-dismiss="modal">Save changes</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/script_new.js"></script>
+</body>
+
+</html>
