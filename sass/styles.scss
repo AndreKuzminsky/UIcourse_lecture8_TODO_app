@@ -1,0 +1,36 @@
+@import "bootstrap-sass/assets/stylesheets/bootstrap";
+.container {
+    width: 50%;
+    padding-top: 120px;
+}
+
+#inputText {
+    margin: 15px 0;
+}
+
+ol {
+    padding-left: 0;
+}
+
+li {
+    position: relative;
+    list-style-position: inside;
+    padding: $table-cell-padding + 3px;
+    line-height: $line-height-base;
+    border: 1px solid $table-border-color;
+    border-bottom: 0;
+    &:last-child {
+        border-bottom: 1px solid $table-border-color;
+    }
+    &:hover {
+        background-color: $table-bg-hover;
+    }
+}
+
+span {
+    pointer-events: none;
+    cursor: pointer;
+    &::before {
+        pointer-events: all;
+    }
+}
